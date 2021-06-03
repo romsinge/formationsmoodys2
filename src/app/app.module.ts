@@ -13,6 +13,7 @@ import { CurrencyPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { CartComponent } from './components/cart/cart.component';
+import { CartFilterPipe } from './pipes/cart-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CartComponent } from './components/cart/cart.component';
     SearchPipe,
     CountPipe,
     ProductListComponent,
-    CartComponent
+    CartComponent,
+    CartFilterPipe
   ],
   imports: [
     BrowserModule,
