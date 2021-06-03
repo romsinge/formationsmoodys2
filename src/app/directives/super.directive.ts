@@ -9,13 +9,10 @@ export class SuperDirective implements OnInit {
     index: number;
     color: string;
   } = { index: 0, color: 'white' }
-  el: ElementRef
 
   @ViewChild('productTitle') titleRef: ElementRef | undefined
 
-  constructor(el: ElementRef) {
-    this.el = el
-  }
+  constructor(private el: ElementRef) {}
   
   ngOnInit() {
     if (this.ambSuper.index % 2 == 0) {

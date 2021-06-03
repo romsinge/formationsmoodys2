@@ -1,5 +1,7 @@
+import { CurrencyPipe } from '@angular/common';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Product } from 'src/app/models/product.model';
+import { VatPipe } from 'src/app/pipes/vat.pipe';
 
 @Component({
   selector: 'amb-product',
@@ -18,10 +20,11 @@ export class ProductComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  constructor() { }
+  constructor(private vatPipe: VatPipe, private currencyPipe: CurrencyPipe) { }
 
   handleImageClick(event: MouseEvent) {
     console.log('IMAGE CLICK', event)
+    console.log('PRODUCT CLICKED :', this.currencyPipe.transform(this.vatPipe.transform(this.product.price)))
   }
 
   handleCartClick() {

@@ -9,6 +9,7 @@ import { AmbMaterialModule } from './modules/amb-material/amb-material.module';
 import { VatPipe } from './pipes/vat.pipe';
 import { SearchPipe } from './pipes/search.pipe';
 import { CountPipe } from './pipes/count.pipe';
+import { CurrencyPipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { CountPipe } from './pipes/count.pipe';
     BrowserAnimationsModule,
     AmbMaterialModule
   ],
-  providers: [],
+  providers: [VatPipe, CurrencyPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
