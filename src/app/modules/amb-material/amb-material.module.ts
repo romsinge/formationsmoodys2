@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button'
 import {MatIconModule} from '@angular/material/icon'
+import {MatInputModule} from '@angular/material/input'
 
 @NgModule({
   declarations: [],
@@ -12,7 +13,8 @@ import {MatIconModule} from '@angular/material/icon'
   exports: [
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule
   ]
 })
 export class AmbMaterialModule { }

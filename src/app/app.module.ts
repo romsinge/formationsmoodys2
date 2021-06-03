@@ -10,6 +10,7 @@ import { VatPipe } from './pipes/vat.pipe';
 import { SearchPipe } from './pipes/search.pipe';
 import { CountPipe } from './pipes/count.pipe';
 import { CurrencyPipe } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CurrencyPipe } from '@angular/common';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AmbMaterialModule
+    AmbMaterialModule,
+    FormsModule
   ],
   providers: [VatPipe, CurrencyPipe],
   bootstrap: [AppComponent]
