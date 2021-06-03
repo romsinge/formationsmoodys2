@@ -11,6 +11,8 @@ import { SearchPipe } from './pipes/search.pipe';
 import { CountPipe } from './pipes/count.pipe';
 import { CurrencyPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { FormsModule } from '@angular/forms';
     SuperDirective,
     VatPipe,
     SearchPipe,
-    CountPipe
+    CountPipe,
+    ProductListComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
